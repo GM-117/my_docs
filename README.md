@@ -2,23 +2,23 @@
 Pagic 是基于Deno实现的，所以使用前需要先安装Deno。
 
 ## 1. 安装Deno [不同系统]
-######Shell (Mac, Linux):
+Shell (Mac, Linux):
 ```
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
-######PowerShell (Windows):
+PowerShell (Windows):
 ```
 iwr https://deno.land/x/install/install.ps1 -useb | iex
 ```
-######Homebrew (Mac):
+Homebrew (Mac):
 ```
 brew install deno
 ```
-######Chocolatey (Windows):
+Chocolatey (Windows):
 ```
 choco install deno
 ```
-######Scoop (Windows):
+Scoop (Windows):
 ```
 scoop install deno
 ```
@@ -36,7 +36,7 @@ deno install --unstable --allow-read --allow-write --allow-net --allow-run --nam
 
 ## 3. 初始化项目
 要使用 pagic 构建静态网站，则该项目至少需要包含一个 pagic.config.ts 配置文件和一个 md/tsx 页面文件：
-#####新建如下目录文件：
+新建如下目录文件：
 ```
 site/
 ├── pagic.config.ts
@@ -56,7 +56,7 @@ pagic build --watch --serve
 在览器打开 http://127.0.0.1:8000/ ，显示出README.md中的Hello world
 
 
-#####build构建结果在dist目录中
+build构建结果在dist目录中
 ```
 site/
 |── dist    # 构建结果目录
