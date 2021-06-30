@@ -12,19 +12,19 @@
 </head><body><header><h1 class="hide_on_mobile"><a href="/my_docs/">Monze docs</a></h1><nav><ul><li class="show_on_mobile flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/my_docs/assets/czs-menu-l.svg&quot;)"></a></li><li class="show_on_mobile"><h1 class="mobile_title"><a href="/my_docs/">Monze docs</a></h1></li><li class="hide_on_mobile"><a href="/my_docs/introduction/index.html">Docs</a></li><li class="hide_on_mobile"><a href="https://pagic.org/">Pagic</a></li><li style="flex-grow:1"></li><li class="hide_on_mobile"><a href="/my_docs/about/index.html">About</a></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/GM-117/my_docs" target="_blank" style="background-image:url(&quot;/my_docs/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/my_docs/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/my_docs/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/my_docs/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/my_docs/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><aside class="sidebar"><ol class="list_style_none"><li class=""><a href="/my_docs/introduction/index.html" class="nav_link">Pagic template docs 使用模板</a></li><li class="unfold"><a href="/my_docs/test_pages/index.html" class="nav_link">Test pages<span class="czs-angle-up-l" style="background-image:url(&quot;/my_docs/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/my_docs/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/my_docs/test_pages/markdown_test.html" class="nav_link">Markdown test</a></li><li class=""><a href="/my_docs/test_pages/front_matter_test.html" class="nav_link">Front matter test</a></li><li class=""><a href="/my_docs/test_pages/react_hooks_test.html" class="nav_link">React hooks test</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">Folder<span class="czs-angle-up-l" style="background-image:url(&quot;/my_docs/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/my_docs/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/my_docs/folder/foo.html" class="nav_link">Foo</a></li><li class=""><a href="/my_docs/folder/bar.html" class="nav_link">Custom sidebar text</a></li></ol></li></ol></aside><section class="main"><div class="main_article"><article><h1>Pagic安装和使用</h1>
 <p>Pagic 是基于Deno实现的，所以使用前需要先安装Deno。</p>
 <h2 id="1-%E5%AE%89%E8%A3%85deno-%E4%B8%8D%E5%90%8C%E7%B3%BB%E7%BB%9F">1. 安装Deno [不同系统]<a class="anchor" href="#1-%E5%AE%89%E8%A3%85deno-%E4%B8%8D%E5%90%8C%E7%B3%BB%E7%BB%9F">§</a></h2>
-<p>######Shell (Mac, Linux):</p>
+<p>Shell (Mac, Linux):</p>
 <pre class="language-autoit"><code class="language-autoit">curl <span class="token operator">-</span>fsSL https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>install<span class="token operator">/</span>install<span class="token punctuation">.</span>sh | sh
 </code></pre>
-<p>######PowerShell (Windows):</p>
+<p>PowerShell (Windows):</p>
 <pre class="language-autoit"><code class="language-autoit">iwr https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>deno<span class="token punctuation">.</span>land<span class="token operator">/</span>x<span class="token operator">/</span>install<span class="token operator">/</span>install<span class="token punctuation">.</span>ps1 <span class="token operator">-</span>useb | iex
 </code></pre>
-<p>######Homebrew (Mac):</p>
+<p>Homebrew (Mac):</p>
 <pre class="language-autoit"><code class="language-autoit">brew install deno
 </code></pre>
-<p>######Chocolatey (Windows):</p>
+<p>Chocolatey (Windows):</p>
 <pre class="language-autoit"><code class="language-autoit">choco install deno
 </code></pre>
-<p>######Scoop (Windows):</p>
+<p>Scoop (Windows):</p>
 <pre class="language-autoit"><code class="language-autoit">scoop install deno
 </code></pre>
 <h2 id="2-%E5%AE%89%E8%A3%85-pagic">2. 安装 Pagic<a class="anchor" href="#2-%E5%AE%89%E8%A3%85-pagic">§</a></h2>
@@ -36,7 +36,7 @@
 </code></pre>
 <h2 id="3-%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE">3. 初始化项目<a class="anchor" href="#3-%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%B9%E7%9B%AE">§</a></h2>
 <p>要使用 pagic 构建静态网站，则该项目至少需要包含一个 pagic.config.ts 配置文件和一个 md/tsx 页面文件：
-#####新建如下目录文件：</p>
+新建如下目录文件：</p>
 <pre class="language-autoit"><code class="language-autoit">site<span class="token operator">/</span>
 ├── pagic<span class="token punctuation">.</span>config<span class="token punctuation">.</span>ts
 └── README<span class="token punctuation">.</span>md
@@ -50,7 +50,7 @@
 <pre class="language-autoit"><code class="language-autoit">pagic build <span class="token operator">-</span><span class="token operator">-</span>watch <span class="token operator">-</span><span class="token operator">-</span>serve
 </code></pre>
 <p>在览器打开 <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a> ，显示出README.md中的Hello world</p>
-<p>#####build构建结果在dist目录中</p>
+<p>build构建结果在dist目录中</p>
 <pre class="language-autoit"><code class="language-autoit">site<span class="token operator">/</span>
 |── dist    # 构建结果目录
 |   └── index<span class="token punctuation">.</span>html
