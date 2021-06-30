@@ -7,7 +7,7 @@ export default {
 
   theme: 'docs',
   plugins: ['sidebar', 'prev_next'],
-  title: 'Pagic template docs',
+  title: 'Monze docs',
   description: 'Use this template to create a Pagic site with the docs theme',
   // To use jsx syntax, please rename this file to pagic.config.tsx
   // head: <>
@@ -29,7 +29,7 @@ export default {
       align: 'right',
     },
   ],
-  github: 'https://github.com/xcatliu/my_docs',
+  github: 'https://github.com/GM-117/my_docs',
   sidebar: {
     '/': [
       'introduction/README.md',
