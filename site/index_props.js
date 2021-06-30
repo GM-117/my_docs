@@ -1,20 +1,14 @@
 import projectConfig from '/my_docs/pagic.config.js';
 export default {
-    'prev': {
-        "text": "React hooks test",
-        "link": "test_pages/react_hooks_test.html"
-    },
-    'next': {
-        "text": "Custom sidebar text",
-        "link": "folder/bar.html"
-    },
+    'prev': undefined,
+    'next': undefined,
     config: { "root": "/", ...projectConfig, branch: 'main' },
-    'pagePath': "folder/foo.md",
+    'pagePath': "site/README.md",
     'layoutPath': "_layout.tsx",
-    'outputPath': "folder/foo.html",
-    'title': "Foo",
+    'outputPath': "site/index.html",
+    'title': "Hello world",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>Foo</h1>\n<p>The foo page.</p>'
+            __html: '<h1>Hello world</h1>'
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
@@ -22,18 +16,18 @@ export default {
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
         React.createElement("script", { src: "/my_docs/index.js", type: "module" })),
-    'contentTitle': React.createElement("h1", { key: "0" }, "Foo"),
+    'contentTitle': React.createElement("h1", { key: "0" }, "Hello world"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>The foo page.</p>'
+            __html: ''
         } }),
     'toc': null,
-    'author': "GM-117",
+    'author': "monze0117",
     'contributors': [
-        "GM-117"
+        "monze0117"
     ],
-    'date': "2021-06-30T02:09:59.000Z",
-    'updated': null,
-    'excerpt': "The foo page.",
+    'date': "2021-06-30T03:25:38.000Z",
+    'updated': "2021-06-30T06:10:38.000Z",
+    'excerpt': "",
     'cover': undefined,
     'sidebar': [
         {

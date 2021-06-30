@@ -30,7 +30,7 @@ export default {
                 'LICENSE',
                 'dist'
             ],
-            github: 'https://github.com/xcatliu/my_docs',
+            github: 'https://github.com/GM-117/my_docs',
             include: undefined,
             nav: [
                 {
@@ -87,7 +87,7 @@ export default {
             },
             srcDir: '.',
             theme: 'docs',
-            title: 'Pagic template docs',
+            title: 'Monze docs',
             tools: {
                 backToTop: true,
                 editOnGitHub: true
@@ -101,7 +101,7 @@ export default {
         React.createElement("script", { src: "/my_docs/index.js", type: "module" })),
     'sidebar': [
         {
-            "text": "Introduction",
+            "text": "Pagic template docs 使用模板",
             "link": "introduction/index.html",
             "pagePath": "introduction/README.md"
         },

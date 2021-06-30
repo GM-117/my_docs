@@ -1,7 +1,7 @@
 import projectConfig from '/my_docs/pagic.config.js';
 export default {
     'prev': {
-        "text": "Introduction",
+        "text": "Pagic template docs 使用模板",
         "link": "introduction/index.html"
     },
     'next': {
@@ -37,7 +37,7 @@ export default {
     'cover': undefined,
     'sidebar': [
         {
-            "text": "Introduction",
+            "text": "Pagic template docs 使用模板",
             "link": "introduction/index.html",
             "pagePath": "introduction/README.md"
         },
