@@ -61,7 +61,7 @@ export default {
     'cover': "https://octodex.github.com/images/yaktocat.png",
     'sidebar': [
         {
-            "text": "Introduction",
+            "text": "Pagic template docs 使用模板",
             "link": "introduction/index.html",
             "pagePath": "introduction/README.md"
         },

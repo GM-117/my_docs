@@ -26,12 +26,12 @@ export default {
         "monze0117"
     ],
     'date': "2021-06-30T03:25:38.000Z",
-    'updated': null,
+    'updated': "2021-06-30T06:10:38.000Z",
     'excerpt': "",
     'cover': undefined,
     'sidebar': [
         {
-            "text": "Introduction",
+            "text": "Pagic template docs 使用模板",
             "link": "introduction/index.html",
             "pagePath": "introduction/README.md"
         },
