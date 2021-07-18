@@ -1,4 +1,4 @@
-# 使用模板
+# pagic 使用模板
 
 Use this template to create a [Pagic](https://pagic.org) site with the *docs* theme.
 
