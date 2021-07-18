@@ -33,6 +33,7 @@ export default {
   sidebar: {
     '/': [
       'introduction/README.md',
+      'travis-CI/Travis.md',
       {
         link: 'test_pages/README.md',
         children: ['test_pages/markdown_test.md', 'test_pages/front_matter.md', 'test_pages/react_hooks_test.tsx'],
